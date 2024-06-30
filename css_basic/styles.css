@@ -1,3 +1,4 @@
+
 body {
   display: flex;
   flex-direction: column;
@@ -27,12 +28,12 @@ header,
 footer {
   padding: 20px;
   background-color: #333;
-  color: white;
+  color: rgb(3, 85, 50);
   text-align: center;
 }
 
 article,
 aside {
-  border: 1px solid #ccc;
+  border: 1px solid #5c0267;
   margin: 10px;
 }
