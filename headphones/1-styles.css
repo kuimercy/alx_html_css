@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .holberton_school-icon-arrow_1:before {
+    content: "\e900";
+  }
+  .holberton_school-icon-arrow_2:before {
+    content: "\e901";
+  }
+  .holberton_school-icon-arrow_3:before {
+    content: "\e902";
+  }
+  .holberton_school-icon-arrow_4:before {
+    content: "\e903";
+  }
+  .holberton_school-icon-arrow_5:before {
+    content: "\e904";
+  }
+  .holberton_school-icon-check:before {
+    content: "\e905";
+  }
+  .holberton_school-icon-ic_bag:before {
+    content: "\e906";
+  }
+  .holberton_school-icon-ic_cart:before {
+    content: "\e907";
+  }
+  .holberton_school-icon-ic_facebook:before {
+    content: "\e908";
+  }
+  .holberton_school-icon-ic_hearing:before {
+    content: "\e909";
+  }
+  .holberton_school-icon-ic_instagram:before {
+    content: "\e90a";
+  }
+  .holberton_school-icon-ic_laptop:before {
+    content: "\e90b";
+  }
+  .holberton_school-icon-ic_money:before {
+    content: "\e90c";
+  }
+  .holberton_school-icon-ic_music:before {
+    content: "\e90d";
+  }
+  .holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+  }
+  .holberton_school-icon-ic_twitter:before {
+    content: "\e90f";
+  }
+  .holberton_school-icon-ic_video:before {
+    content: "\e910";
+  }
+  .holberton_school-icon-menu:before {
+    content: "\e911";
+  }
+  .holberton_school-icon-search_1:before {
+    content: "\e912";
+  }
+  .holberton_school-icon-search_2:before {
+    content: "\e913";
+  }
+  .holberton_school-icon-star:before {
+    content: "\e914";
+  }
+  
+
+
+
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('images copy/headphones_hero_1.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.nav {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    width: 100px; 
+    margin-right: 20px;
+}
+
+.nav-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+
+    
+}
+
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    
+    
+}
+
+.hero-content h1 {
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 280px;
+    
+}
+
+.hero-content h4 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 100;
+    font-size: small;
+
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 0.7rem;
+    color: white;
+    background-color: #FF6565;
+    text-decoration: none;
+    border-radius: 25px;
+    
+    transition: background-color 0.3s ease;
+    
+}
+
+.btn:hover {
+    background-color: #FF6565;
+    opacity: 0.9;
+}
+
+.hero-content p {
+    font-size: 1rem;
+    margin-top: 100px;
+
+
+
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-title {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1.2rem;
+        margin-top: 200px;
+    }
+
+    .hero-content h4 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.6rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        padding: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 1rem;
+        margin-top: 150px;
+    }
+
+    .hero-content h4 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 6px 12px;
+        font-size: 0.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.8rem;
+        margin-top: 50px;
+    }
+}
+
+/* What we do section styling */
+
+
+.what-we-do {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.what-we-do h2 {
+    font-size: 1.5rem;
+    margin-bottom: 150px;
+    
+
+}
+
+.what-we-do-content {
+    max-width: 600px;
+    padding: 20px;
+    
+    
+}
+
+.what-we-do-content p {
+    font-size: 1rem;
+    margin: 0;
+    
+    
+}
+
+.what-we-do-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    
+}
+
+.what-we-do-content ul li {
+    margin-bottom: 20px;
+    
+}
+.what-we-do-content ul li img{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    margin-left: 36px;
+    
+}
+
+.what-we-do-content ul li h4{
+    font-size: 0.5rem;
+    font-weight:normal;
+    
+}
